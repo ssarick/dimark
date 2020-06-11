@@ -126,82 +126,37 @@
             </ul>
           </nav>
 
-          <!-- <div id="details">
-          <div class="product-details" id="1-details">
-          <h4 align="left">Yangi boshlanuvchilar</h4>
-          <div class="col">
-          <br><br><br><br><br><br></div>
-        </div>
-        <div class="product-details-active" id="2-details">
-        <h4 align="left">Marketologlar</h4>
-        <div class="col"><br><br><br><br><br></div>
-      </div>
-      <div class="product-details" id="3-details">
-      <h4 align="left">Yangi boshlanuvchilar</h4>
-      <div class="col"><br><br><br><br></div>
-    </div>
-    <div class="product-details" id="4-details">
-    <h4 align="left">Marketologlar</h4>
-    <div class="col"><br><br><br><br><br></div>
-  </div>
-  <div class="product-details" id="5-details">
-  <h4 align="left">Yangi boshlanuvchilar</h4>
-  <div class="col"><br><br><br><br><br></div>
-</div>
-</div> -->
-
-<div id="details">
-  <div class="slider">
-    <div class="slider-wrapper">
-      <div class="slider__item">
-        <div class="product-details" id="1-details">
-          <h4 align="left">Yangi boshlanuvchilar</h4>
-          <div class="col">
-            <br><br><br><br><br><br>
+          <div id="details">
+            <div class="product-details" id="1-details">
+              <h4 align="left">Yangi boshlanuvchilar</h4>
+              <div class="col">
+                <br><br><br><br><br><br></div>
+            </div>
+            <div class="product-details-active" id="2-details">
+              <h4 align="left">Marketologlar</h4>
+              <div class="col"><br><br><br><br><br></div>
+            </div>
+            <div class="product-details" id="3-details">
+              <h4 align="left">Tadbirkorlar</h4>
+              <div class="col"><br><br><br><br></div>
+            </div>
+            <div class="product-details" id="4-details">
+              <h4 align="left">StartUp'lar</h4>
+              <div class="col"><br><br><br><br><br></div>
+            </div>
+            <div class="product-details" id="5-details">
+              <h4 align="left">Bloggerlar</h4>
+              <div class="col"><br><br><br><br><br></div>
+            </div>
+            <div class="product-details" id="6-details">
+              <h4 align="left">Freelancerlar</h4>
+              <div class="col"><br><br><br><br><br></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="slider__item">
-        <div class="product-details-active" id="2-details">
-          <h4 align="left">Marketologlar</h4>
-          <div class="col"><br><br><br><br><br></div>
-        </div>
-      </div>
-      <div class="slider__item">
-        <div class="product-details" id="3-details">
-          <h4 align="left">Tadbirkorlar</h4>
-          <div class="col"><br><br><br><br></div>
-        </div>
-      </div>
-      <div class="slider__item">
-        <div class="product-details" id="4-details">
-          <h4 align="left">StartUp'lar</h4>
-          <div class="col"><br><br><br><br><br></div>
-        </div>
-      </div>
-      <div class="slider__item">
-        <div class="product-details" id="5-details">
-          <h4 align="left">Bloggerlar</h4>
-          <div class="col"><br><br><br><br><br></div>
-        </div>
-      </div>
-      <div class="slider__item">
-        <div class="product-details" id="6-details">
-          <h4 align="left">Freelancerlar</h4>
-          <div class="col"><br><br><br><br><br></div>
-        </div>
-      </div>
     </div>
-    <a class="slider__control slider__control_left" href="#" role="button"></a>
-    <a class="slider__control slider__control_right" href="#" role="button"></a>
   </div>
-</div>
-
-
-</div>
-</div>
-</div>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -213,8 +168,12 @@
     $('.product-details').hide();
   });
   $('#1-details-b').on('click', function() {
-    $('#1-details').show("slow"); $('#2-details').hide(); $('#3-details').hide(); $('#4-details').hide();
-    $('#5-details').hide(); $('#6-details').hide();
+    $('#1-details').show("slow");
+    $('#2-details').hide("slide", { direction: "left" }, 1000);
+    $('#3-details').hide();
+    $('#4-details').hide();
+    $('#5-details').hide();
+    $('#6-details').hide();
   });
   $('#2-details-b').on('click', function() {
     $('#1-details').hide(); $('#2-details').show("slow");

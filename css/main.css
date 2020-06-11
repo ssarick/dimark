@@ -447,6 +447,23 @@ h3{
 
 }
 
+.product-details {
+  padding: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  width: auto;
+  height: 340px;
+  background-color: darkgrey;
+}
+
+.product-details-active {
+  padding: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  width: auto;
+  height: 340px;
+  background-color: darkgrey;
+}
 
 .slider {
   position: relative;
