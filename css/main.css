@@ -250,7 +250,7 @@ h3{
 @media (min-width: 1200px) {
   .content{
     margin: auto;
-    width: 1600px;
+    width: auto;
     padding-top: 58px;
     /* background: url(../img/rect8.png) no-repeat;
     background-position: left top;
