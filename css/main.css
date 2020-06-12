@@ -19,6 +19,7 @@ body{
 }
 .main-buttons .btn{
   height: 55px;
+  margin: auto;
   padding-left: 30px;
   padding-right: 30px;
   color: #fff;
@@ -481,5 +482,59 @@ h3{
   }
   .photo-to-cont-3{
     margin-left: 190px;
+  }
+
+  /* CONTAINER-4 */
+
+  .container-4 .row{
+    margin-top: 60px;
+    padding: 20px 0 60px 0;
+  }
+  .container-4 .rounded-button {
+    border: 2px solid #FF5931;
+    border-radius: 35px;
+    color: #F22C5A;
+    width: 180px;
+  }
+
+  .container-4 .rounded-button ul li a {
+    color: black;
+  }
+  .container-4 .rounded-button ul li a:hover {
+    color: #fff;
+  }
+  .container-4 .rounded-button .rounded-back{
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Archive';
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .container-4 .rounded-button .rounded-back:hover{
+    border-radius: 50%;
+    background-color: #FF5931;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color:white;
+  }
+  .container-4 .row .row .col-4 h5{
+    width: 300px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .container-4 .row .row .col-4 img{
+    width:114px;
+    height: 115px;
+  }
+  .container-4 .row .row .col-4{
+    display: flex;
+    padding-top: 30px;
+  }
+  .main-button {
+    margin: auto;
   }
 }
