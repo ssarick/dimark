@@ -8,6 +8,12 @@ html {
 h3{
   font-family: 'Archive';
 }
+.Archive-text{
+  font-family: 'Archive';
+}
+.Ibm-text{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
 
 body{
   font-family: 'Jura', sans-serif;
@@ -160,15 +166,6 @@ h3{
     display: -ms-flexbox;
     display: flex;
   }
-  /* TODO:  */
-  /* .col-4 img::before{
-    display: inline-block;
-    content: "";
-    height: 57px;
-    width: 18px;
-    background: #F47232;
-    margin-top: 35px;
-  } */
   .container-1 .col-4 .logo1{
     padding-left: 44px;
     padding-top: 35px;
@@ -576,8 +573,16 @@ h3{
     margin: auto;
     padding: 35px 0 45px 0;
   }
-  .container-7 .row .col-4 {
+  .container-7 .row .col-8 img {
+    width: 685px;
+    height: 465px;
+    margin-top: 50px;
+    margin-left: 175px;
+  }
 
+  .container-7 .main-buttons .btn{
+    padding: 0 50px 0 50px;
+    margin-top: 0;
   }
 
   .box{
@@ -635,5 +640,75 @@ h3{
   }
   h1 > img{
     padding-top: 30px;
+  }
+  /* CONTAINER - 8 */
+  .container-8 .col {
+    margin: 50px 0 40px 0;
+  }
+  .stars h3{
+    padding-left: 20px;
+    line-height: 41px;
+    padding-bottom: 25px;
+  }
+  .stars img{
+    width: 42px;
+    height: 42px;
+  }
+  .stars{
+    padding-top: 52px;
+    padding-left: 30px;
+
+  }
+  .gradient-back{
+    background: linear-gradient(130.4deg, #F49B33 25.94%, #F20A6E 105.39%);
+    box-shadow: 0px 4px 15px rgba(244, 22, 36, 0.31);
+    border-radius: 33px;
+    color: #fff;
+  }
+  .col-4 .col img{
+    width: 22px;
+    height: 22px;
+    margin-right: 18px;
+  }
+  .container-8 .row .col-4 .col {
+    margin: 5px 0 5px 0;
+    font-size: 20px;
+  }
+  .money-block{
+    padding-top: 100px;
+    padding-left: 58px;
+    color: #181059;
+    padding-bottom: 50px;
+  }
+  .money-block p{
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .money-block p > span > s{
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .money-block p > strong {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .container-8 .main-buttons .btn{
+    margin: 35px 0 0 0;
+    padding: 0 50px 0 50px;
+  }
+  .container-8 .row{
+    align-items: center;
+  }
+  .inverse{
+    color: #fff;
+  }
+  .inverse span{
+    color: #fff;
+  }
+  .container-8 ul.countdown li {
+    width: 100px;
+  }
+  .container-8 ul{
+    padding-right: 30px;
   }
 }
