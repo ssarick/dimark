@@ -13,6 +13,7 @@ h3{
 }
 .Ibm-text{
   font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
 }
 
 body{
@@ -276,7 +277,7 @@ h3{
 @media (min-width: 1200px) {
   .content{
     margin: auto;
-    width: 1500px;
+    width: 1440px;
     padding-top: 58px;
     /* background: url(../img/rect8.png) no-repeat;
     background-position: left top;
@@ -284,7 +285,7 @@ h3{
   }
   .content-part{
     width: 1400px;
-    margin: 0 100px 0 100px;
+    margin: auto;
   }
   .container-1{
     position: relative;
@@ -579,10 +580,23 @@ h3{
     margin-top: 50px;
     margin-left: 175px;
   }
-
+  .container-7 .row .left img {
+    width: auto;
+    height: auto;
+    margin-right: 70px;
+    margin-bottom: 30px;
+  }
+  .container-7 .row .right img{
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    transform: scale(-1, 1)
+  }
   .container-7 .main-buttons .btn{
     padding: 0 50px 0 50px;
     margin-top: 0;
+    margin-left: 100px;
   }
 
   .box{
@@ -699,9 +713,7 @@ h3{
   .container-8 .row{
     align-items: center;
   }
-  .inverse{
-    color: #fff;
-  }
+  .inverse,
   .inverse span{
     color: #fff;
   }
@@ -710,5 +722,150 @@ h3{
   }
   .container-8 ul{
     padding-right: 30px;
+  }
+
+  /* CONTAINER - 9 */
+
+  .container-9{
+    margin-top: 250px;
+    margin-bottom: 50px;
+    /* background: url(../img/Group 1166.png);
+    background-position: top;
+    background-size: cover; */
+  }
+  .container-9 .row .gradient-back{
+    background: linear-gradient(125.86deg, #F47033 13.07%, #EC0E56 64.79%, #C8020E 121.01%);
+    border-radius: 22px;
+    border-radius: 0 22px 22px 0;
+    box-shadow: 0px 4px 15px rgba(244, 22, 36, 0.31);
+
+  }
+  .container-9 .col-3 img{
+    position: absolute;
+    bottom: 70px;
+    margin-left: -100px;
+  }
+  .container-9 .row .col {
+    background: #FDB946;
+    border-radius: 11px;
+    margin: 6px;
+  }
+  .container-9 .row{
+    margin-bottom: 50px;
+  }
+  .container-9 .row .col p{
+    margin: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  hr{
+    width: 16px;
+    background-color: #fff;
+  }
+  .experience{
+    padding: 30px 0 0 35px;
+    width:
+  }
+  .hide-1{
+    display: none;
+  }
+  .gradient-image{
+    margin-top: 100px;
+    background: url(../img/grad-image.png) no-repeat;
+    background-position: top;
+  }
+  .container-9 .row .col-4, .col-6{
+    margin-top: 45px;
+  }
+  .container-9 .row .col-4 img{
+    margin-left: 100px;
+  }
+  /* CONTAINER-10 */
+  .container-10{
+    margin-top: 86px;
+  }
+  .container-10 .col-9 .hundred-p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 138px;
+    font-weight: 100;
+    line-height: 100px;
+  }
+  .container-10 .col-9 .cashback{
+    font-size: 66px;
+    line-height: 55px;
+    padding-left: 24px;
+  }
+  .container-10 img{
+    margin-left: 70px;
+  }
+  .container-10 .col-10{
+    padding: 45px 0 65px 0;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Jura';
+    font-weight: 700;
+  }
+  .adelina{
+    align-items: flex-start;
+    border-radius: 22px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+    padding: 35px 0 30px 25px;
+  }
+  .adelina img{
+    height: 140px;
+    width: 140px;
+    margin: 0;
+    margin-right: 28px;
+  }
+  .adelina .logos img{
+    height: 58px;
+    width: 122px;
+    margin: 0;
+  }
+  .container-10 .col h3{
+    font-family: 'Archive';
+    text-align: center;
+    margin: auto;
+    padding: 35px 0 45px 0;
+  }
+  .container-10 .row .col-10{
+    height: 150px;
+  }
+  .container-5 .row .col-10 img{
+    margin: 19px;
+  }
+  .container-10 .row .col-8{
+    height: 150px;
+  }
+  .container-10 .row .col-8 img{
+    margin: 30px;
+  }
+  .container-10 .row .col-4 img{
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+  }
+  .container-10 .row .col-4 p{
+    line-height: 30px;
+  }
+  .justify-content-around p{
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+  .container-10 .gradient-image {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  .container-10 .row .col-10{
+    height: 0;
+  }
+  .container-10 .row .col-10 img{
+    width: 156px;
+    height: 108px;
+    margin: 3px;
   }
 }
