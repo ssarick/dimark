@@ -629,47 +629,49 @@ h3{
     margin: 10px;
     text-align: center;
     color: #fff;
+    position: relative;
+    z-index: 2;
   }
   .container-6 .modul-button button.modul-button-in:hover{
     background: linear-gradient(158.52deg, #FFC456 3.01%, #FFAB01 39.7%, #F47960 85.88%);
   }
   .descr{
-    display:none;
-    padding:10px;
+    padding: 10px 10px 10px 70px;
     border-radius: 111px;
-    margin-top: -30px;
-    margin-left: -5px;
+    margin-top: -78px;
+    margin-left: 15px;
+    width: 270px;
     height: 67px;
-    -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
-    -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
-    box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    border: 4px solid #4D8DFF;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    box-shadow:5px 5px 5px 5px rgba(0,0,0,0.1);
     color: #181059;
-    z-index:1;
+    position: relative;
+    z-index: 1;
   }
   .container-6 .modul-button button.modul-button-in:hover .descr{
-    display:block;
-    width:400px;
-  }
-  .container-6 .module-block{
-    margin-left: -60px;
+
   }
   .container-6 .modul-image{
-    margin-top: 60px;
+    margin-top: 40px;
   }
-  .container-6 .row .col-5 .row{
+  .container-6 .row .col-6 .row{
     margin-left: 25px;
   }
   .first-1{
-    margin-left: -50px;
+    margin-left: -120px;
   }
   .first-2{
-    margin-left: 20px;
+    margin-left: -60px;
   }
   .first-3{
-    margin-left: 60px;
+    margin-left: -20px;
   }
   .container-6 .module-block-l{
-    margin-right: -160px;
+    margin-left: 30px;
+    margin-right: -180px;
   }
   .first-1-l{
     margin-left: 130px;
@@ -775,6 +777,10 @@ h3{
   .container-8 .col {
     margin: 50px 0 40px 0;
   }
+  .container-8 .rx{
+    background: #FFF3F7;
+    border-radius: 33px;
+  }
   .stars h3{
     padding-left: 20px;
     line-height: 41px;
@@ -841,20 +847,28 @@ h3{
   }
 
   /* CONTAINER - 9 */
-
+  h3.sobirov{
+    padding-top: 150px;
+    padding-left: 160px;
+    margin-bottom: -1px;
+    font-family: Archive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 85px;
+    line-height: 44px;
+    color: #EFECFD;
+  }
   .container-9{
-    margin-top: 250px;
+    background: #EFECFD;
     margin-bottom: 50px;
-    /* background: url(../img/Group 1166.png);
-    background-position: top;
-    background-size: cover; */
+    /*background: url(../img/Group 1166.png);*/
+    /*background-position: top;*/
+    /*background-size: cover;*/
   }
   .container-9 .row .gradient-back{
     background: linear-gradient(125.86deg, #F47033 13.07%, #EC0E56 64.79%, #C8020E 121.01%);
-    border-radius: 22px;
     border-radius: 0 22px 22px 0;
     box-shadow: 0px 4px 15px rgba(244, 22, 36, 0.31);
-
   }
   .container-9 .col-3 img{
     position: absolute;
@@ -867,6 +881,7 @@ h3{
     margin: 6px;
   }
   .container-9 .row{
+    padding-top: 30px;
     margin-bottom: 50px;
   }
   .container-9 .row .col p{
