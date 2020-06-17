@@ -403,7 +403,7 @@
           <div class="col module-block">
             <div class="col first-1">
               <div class="modul-button Jura-text">
-                <button class="modul-button-in" type="button">
+                <button class="modul-button-in slide-toggle" type="button">
                   1
                 </button>
                 <div class="descr">
@@ -1114,6 +1114,86 @@
     <br>
     <br>
   </div>
+  <div class="container-11 content-part">
+    <h3 style="text-align:center;">savollar va <span>javoblar</span></h3>
+    <div class="row">
+      <div class="col-6">
+        <div class="kurs-block d-flex slide-toggle-1">
+          <div class="col">
+            <h5 class="Jura-text" style="font-weight:700;">Kurs qanday o'tadi?</h5>
+            <br>
+            <p class="kurs-details Jura-text" style="font-weight:300; font-size: 17px;">
+              - Kurs onlayn formatda o'tkaziladi. Sizda GetSource platformasida shaxsiy kabinetingiz bo'ladi, u erda siz o'zingizga qulay vaqtda video darslarini tomosha qilishingiz mumkin
+            </p>
+            <p class="kurs-details-1 Jura-text" style="font-weight:300; font-size: 17px;">
+              - Kurs onlayn formatda o'tkaziladi. Sizda GetSource platformasida shaxsiy kabinetingiz bo'ladi, u erda siz o'zingizga qulay vaqtda video darslarini tomosha qilishingiz mumkin
+            </p>
+          </div>
+          <div class="kurs-button">
+            <button class="kurs-button-in" type="button">
+              <img src="img/triangle-b.png" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="kurs-block d-flex slide-toggle-2">
+          <div class="col">
+            <h5 class="Jura-text" style="font-weight:700;">Kurs qancha davom etadi?</h5>
+            <br>
+            <p class="kurs-details Jura-text" style="font-weight:300; font-size: 17px;">
+              - Kurs qisqa video parchalalar bilan yozib olingan. Har bir dars 7 dan 30 minutgacha davom etadi. Kursni qanday o'tish to'liq sizga bog'liq, uni 2 hafta ichida yoki 2 oy davomida o'tishingiz mumkin
+            </p>
+            <p class="kurs-details-2 Jura-text" style="font-weight:300; font-size: 17px;">
+              - Kurs qisqa video parchalalar bilan yozib olingan. Har bir dars 7 dan 30 minutgacha davom etadi. Kursni qanday o'tish to'liq sizga bog'liq, uni 2 hafta ichida yoki 2 oy davomida o'tishingiz mumkin
+            </p>
+          </div>
+          <div class="kurs-button">
+            <button class="kurs-button-in" type="button">
+              <img src="img/triangle-b.png" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="kurs-block d-flex slide-toggle-3">
+          <div class="col">
+            <h5 class="Jura-text" style="font-weight:700;">Uy vazifasini tekshirish qanday <br> amalga oshiriladi?</h5>
+            <br>
+            <p class="kurs-details Jura-text" style="font-weight:300; font-size: 17px;">
+              - Uy vazifangiz tanlangan tarifga qarab tekshiriladi, sizga murabbiylar biriktiriladi va "PREMIUM" talabalar uchun Kamolxonning o'zi uy vazifasini tekshiradi
+            </p>
+            <p class="kurs-details-3 Jura-text" style="font-weight:300; font-size: 17px;">
+              - Uy vazifangiz tanlangan tarifga qarab tekshiriladi, sizga murabbiylar biriktiriladi va "PREMIUM" talabalar uchun Kamolxonning o'zi uy vazifasini tekshiradi
+            </p>
+          </div>
+          <div class="kurs-button">
+            <button class="kurs-button-in" type="button">
+              <img src="img/triangle-b.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 m-auto">
+        <img src="img/Group 1190.png" alt="">
+      </div>
+    </div>
+    <div class="row gradient-back-2">
+      <div class="col d-flex m-auto">
+        <img src="img/Group 1191.png" alt="">
+        <h3 class="">Qanday kafolatlar mavjud?
+          <span class="text-white">Qanday kafolatlar mavjud?</span>
+        </h3>
+      </div>
+      <div class="w-100"></div>
+      <div class="col d-flex">
+        <div class="col-6 box-radius">
+          <img src="img/Group 1180.png" alt="">
+          <p class="text-white">Agar siz to'satdan o'qishni to'xtatib, bir necha oy / yarim yil / 1 yil davom ettirishingiz kerak bo'lsa - biz siz uchun to'lovni "muzlatib" qo'yamiz.</p>
+        </div>
+        <div class="col-6 box-radius">
+          <img src="img/Group 1180.png" alt="">
+          <p class="text-white">Ya'ni, siz to'lagan to'lov keyingi kurs oqimiga o'tadi</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -1139,7 +1219,40 @@
     $('.seconds').text(seconds);
   }, 1000);
 
+  // $(function () {
+  //   $("div").hover(onIn, onOut);
+  // });
+  //
+  // function onIn() {
+  //   $("div").html("Навести");
+  // }
+  //
+  // function onOut() {
+  //   $("div").html("Снять");
+  // }
 
+  $(document).ready(function() {
+    $('.kurs-details-1').hide();
+    $('.kurs-details-2').hide();
+    $('.kurs-details-3').hide();
+  });
+  $(document).ready(function(){
+    $( ".slide-toggle-1" ).click(function(){
+	    $( ".kurs-details-1" ).slideToggle();
+	  });
+    $( ".slide-toggle-2" ).click(function(){
+      $( ".kurs-details-2" ).slideToggle();
+    });
+    $( ".slide-toggle-3" ).click(function(){
+      $( ".kurs-details-3" ).slideToggle();
+    });
+
+       $(".slide-toggle").click(function(){
+           $(".descr").animate({
+               width: "toggle"
+           });
+       });
+   });
 
   $(document).ready(function() {
     $('.2nd-slider').hide();

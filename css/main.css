@@ -999,4 +999,68 @@ h3{
     height: 108px;
     margin: 3px;
   }
+
+  /* CONTAINER _ 11 */
+  .container-11{
+    margin-top: 100px;
+    margin-bottom: 55px;
+  }
+  .container-11 .row{
+    margin-top: 45px;
+    margin-bottom: 55px;
+  }
+  .container-11 .row .col-6 .kurs-block{
+    box-shadow: 0px 11px 33px rgba(0, 0, 0, 0.08), inset 4px 0px 0px #F34456;
+    border-radius: 11px;
+    border: 1px solid #F34456;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+    padding: 24px 28px 24px 28px;
+    margin: 20px;
+    margin-left: 63px;
+    font-size: 17px;
+  }
+  .container-11 .row .col-6 .kurs-block .kurs-button-in{
+    background: linear-gradient(146.98deg, #F49B33 10.94%, #F20A6E 105.39%), #000000;
+    width:  45px;
+    height: 45px;
+    border: 0;
+    border-radius: 50%;
+  }
+  .container-11 .row .col-6 .kurs-block .kurs-button-in:hover img{
+    transform: rotate(-180deg);
+  }
+  .container-11 .gradient-back-2{
+    background: linear-gradient(167.3deg, #F49B33 10.94%, #F20A6E 105.39%), linear-gradient(176.7deg, #F47033 5.34%, #ED2768 62.84%, #D8212C 125.34%);
+    margin-top: 165px;
+    padding: 60px 40px 50px 68px;
+  }
+  .container-11 .gradient-back-2 img{
+    margin-top: -180px;
+  }
+  .container-11 .gradient-back-2 h3{
+    margin-top: 50px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 45px;
+    line-height: 30px;
+  }
+  .container-11 .gradient-back-2 h3 > span{
+    font-size: 33px;
+    line-height: 30px;
+  }
+  .container-11 .gradient-back-2 .box-radius{
+    border-radius: 22px;
+    border: 1px solid white;
+    padding: 35px;
+    margin-right: 15px;
+    font-family: 'Jura', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .container-11 .gradient-back-2 .box-radius img{
+    position: absolute;
+    top: 163px;
+  }
 }
