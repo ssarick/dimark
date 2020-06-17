@@ -150,7 +150,7 @@ h3{
   height: 340px;
 }
 
-@media (min-width: 320px) and (max-width: 411px){
+@media (min-width: 320px) and (max-width: 425px){
 
   body{
     background: none;
@@ -168,7 +168,7 @@ h3{
     display: flex;
   }
   .container-1 .col-4 .logo1{
-    padding-left: 44px;
+    padding-left: 60%;
     padding-top: 35px;
   }
   /* TODO:  */
@@ -189,7 +189,7 @@ h3{
     display: flex;
     width: auto;
     color: black;
-    padding-left: 19px;
+    padding-left: 15%;
     padding-top: 42px;
   }
   .container-1 .col .phone img {
@@ -200,23 +200,26 @@ h3{
   .container-1 .logo2{
     position: absolute;
     top: 225px;
-    left: 19px;
+    left: 10%;
     width: auto;
-    height: 90px;
+    height: 8%;
   }
   .container-1 .text{
     width: auto;
     padding: 530px 10px 0 10px;
     line-height: 34px;
   }
+  .main-buttons {
+    padding: 10%;
+  }
   .main-buttons .btn{
-    margin: 43px 0 0 10px;
+    width: 100%;
   }
   .bonus-timer{
     width: auto;
     height: 275px;
     text-align: center;
-    margin: 70px 0 60px 20px;
+    margin: 70px 10px 60px 10px;
   }
   .title-box{
     font-weight: 400;
@@ -230,12 +233,8 @@ h3{
     visibility: hidden;
   }
   .container-2{
-    height: 800px;
     width: auto;
     background-color: #fff;
-    background: url(../img/Group.png) no-repeat;
-    background-position: right bottom;
-    background-size: contain;
   }
   .container-2 h3{
     margin-left: 30px;
@@ -259,13 +258,135 @@ h3{
   }
   .col .row .col p {
     padding: 0;
-    width: 250px;
-    font-size: 22px;
+    width: 280px;
+    font-size: 25px;
   }
   .timer-clock{
     margin: 0;
   }
+  /* -------------------------- */
 
+  .container-3 .col h3 {
+    font-family: 'Archive';
+    text-align: center;
+    margin: auto;
+    padding: 90px 0 45px 0;
+  }
+
+  .container-3 .round-button a {
+    color: #000;
+    font-weight: bold;
+    border: 2px solid white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 35px;
+    padding: 12px 30px 12px 30px;
+    margin: 5px 20px 5px 20px;
+    transition: 0.5s;
+    width: auto;
+  }
+
+  .container-3 .round-button a:hover {
+    border: 2px solid #F22C5A;
+    border-radius: 35px;
+    color: #F22C5A;
+    transition: 0.5s;
+  }
+
+  .container-3 .col ul li a {
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    display: block;
+  }
+
+  .container-3 h4 {
+    width: 300px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .container-3 .row .col-7 p {
+    padding: 22px 0 0 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .container-3 .row .col-7 {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  img.photo-to-cont-3 {
+    width: 250px;
+  }
+
+  /* CONTAINER-4 */
+
+  .container-4{
+    margin-top: 500px;
+  }
+  .container-4 .row {
+    margin-top: 60px;
+    padding: 20px 0 60px 0;
+  }
+  .container-4 .row .col h3{
+    text-align: center;
+  }
+  .container-4 .rounded-button {
+    border: 2px solid #FF5931;
+    border-radius: 35px;
+    color: #F22C5A;
+    width: 180px;
+  }
+
+  .container-4 .rounded-button ul li a {
+    color: black;
+  }
+
+  .container-4 .rounded-button ul li a:hover {
+    color: #fff;
+  }
+
+  .container-4 .rounded-button .rounded-back {
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Archive';
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .container-4 .rounded-button .rounded-back:hover {
+    border-radius: 50%;
+    background-color: #FF5931;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+  }
+
+  .container-4 .row .row .col-4 h5 {
+    width: 300px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .container-4 .row .row .col-4 img {
+    width: 114px;
+    height: 115px;
+  }
+
+  .container-4 .row .row .col-4 {
+    display: flex;
+    padding-top: 30px;
+  }
+
+  .main-button {
+    margin: auto;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { ... }
@@ -649,6 +770,23 @@ h3{
     border-bottom: 0;
     border-top: 0;
     border-left: 0;
+    background: #fff;
+    box-shadow:5px 5px 5px 5px rgba(0,0,0,0.1);
+    color: #181059;
+    position: relative;
+    z-index: 1;
+  }
+  .descr-l{
+    padding: 10px 85px 10px 20px;
+    border-radius: 111px;
+    margin-top: -78px;
+    margin-left: -200px;
+    width: 270px;
+    height: 67px;
+    border: 4px solid #4D8DFF;
+    border-bottom: 0;
+    border-top: 0;
+    border-right: 0;
     background: #fff;
     box-shadow:5px 5px 5px 5px rgba(0,0,0,0.1);
     color: #181059;
