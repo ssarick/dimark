@@ -607,15 +607,15 @@
       <div class="col-6 m-auto">
         <div class="row">
           <div class="col modul-image">
-            <div class="modul Archive-text text-white">MODUL <span class="text-white" id="modul-left-number">01</span></div>
-            <div class="duration text-white Jura-text">Davomiyligi: <br><span class="text-white" id="modul-left-durability">01</span> minut</div>
-            <div class="number-modul text-white Jura-text m-auto"><span class="text-white" id="modul-left-desc">SMM bilan tanishish</span></div>
+            <div class="modul Archive-text text-white">MODUL <span class="text-white" id="modul-bonus-number">01</span></div>
+            <div class="duration text-white Jura-text">Davomiyligi: <br><span class="text-white" id="modul-bonus-durability">01</span> minut</div>
+            <div class="number-modul text-white Jura-text m-auto"><span class="text-white" id="modul-bonus-desc">SMM bilan tanishish</span></div>
             <img src="img/Group 1178.png" alt="">
           </div>
           <div class="col module-block">
             <div class="col first-1">
               <div class="modul-button Jura-text">
-                <button class="modul-button-in slide-toggle" data-module-type="left" data-number="1" type="button">
+                <button class="modul-button-in slide-toggle" data-module-type="bonus" data-number="13" type="button">
                   13
                 </button>
                 <div class="descr">
@@ -625,7 +625,7 @@
             </div>
             <div class="col first-2">
               <div class="modul-button Jura-text">
-                <button class="modul-button-in slide-toggle" data-module-type="left" data-number="2" type="button">
+                <button class="modul-button-in slide-toggle" data-module-type="bonus" data-number="14" type="button">
                   14
                 </button>
                 <div class="descr">
@@ -635,7 +635,7 @@
             </div>
             <div class="col first-3">
               <div class="modul-button Jura-text">
-                <button class="modul-button-in slide-toggle" data-module-type="left" data-number="3" type="button">
+                <button class="modul-button-in slide-toggle" data-module-type="bonus" data-number="15" type="button">
                   15
                 </button>
                 <div class="descr">
@@ -1319,6 +1319,12 @@
     "12": {'duration': '52', 'desc': 'SMM bilan tanishish'},
   };
 
+  let bonus_modules = {
+    "13": {'duration': '52', 'desc': 'SMM bilan tanishish'},
+    "14": {'duration': '52', 'desc': 'SMM bilan tanishish 4'},
+    "15": {'duration': '52', 'desc': 'SMM bilan tanishish'},
+  };
+
   $(document).ready(function() {
     $('.2nd-slider').hide();
     $('.product-details').hide();
@@ -1375,12 +1381,16 @@
 	let module_type = $(this).attr("data-module-type");
 	if(module_type === 'left') {
       $('#modul-left-number').html(number);
-      $('#modul-left-durability').html(left_modules[number]["durability"]);
+      $('#modul-left-durability').html(left_modules[number]["duration"]);
       $('#modul-left-desc').html(left_modules[number]["desc"]);
     } else if(module_type === 'right') {
       $('#modul-right-number').html(number);
-      $('#modul-right-durability').html(right_modules[number]["durability"]);
+      $('#modul-right-durability').html(right_modules[number]["duration"]);
       $('#modul-right-desc').html(right_modules[number]["desc"]);
+    } else if(module_type == 'bonus') {
+	  $('#modul-bonus-number').html(number);
+      $('#modul-bonus-durability').html(bonus_modules[number]["duration"]);
+      $('#modul-bonus-desc').html(bonus_modules[number]["desc"]);
     }
   });
 
