@@ -398,9 +398,9 @@
       <div class="col-6">
         <div class="row">
           <div class="col modul-image">
-            <div style="text-align: center">MODUL <span id="modul-left-number">01</span></div>
-            <div style="text-align: center">Davomiyligi: <span id="modul-left-durability">01</span></div>
-            <div style="text-align: center"><span id="modul-left-desc">01</span></div>
+            <div class="modul Archive-text text-white">MODUL <span class="text-white" id="modul-left-number">01</span></div>
+            <div class="duration text-white Jura-text">Davomiyligi: <br><span class="text-white" id="modul-left-durability">01</span> minut</div>
+            <div class="number-modul text-white Jura-text m-auto"><span class="text-white" id="modul-left-desc">SMM bilan tanishish</span></div>
             <img src="img/Group 1178.png" alt="">
           </div>
           <div class="col module-block">
@@ -532,9 +532,9 @@
             </div>
           </div>
           <div class="col modul-image">
-            <div style="text-align: center">MODUL <span id="modul-right-number">01</span></div>
-            <div style="text-align: center">Davomiyligi: <span id="modul-right-durability">01</span></div>
-            <div style="text-align: center"><span id="modul-right-desc">01</span></div>
+            <div class="modul Archive-text text-white">MODUL <span class="text-white" id="modul-right-number">01</span></div>
+            <div class="duration text-white Jura-text">Davomiyligi: <br><span class="text-white" id="modul-right-durability">01</span> minut</div>
+            <div class="number-modul text-white Jura-text m-auto"><span class="text-white" id="modul-right-desc">SMM bilan tanishish</span></div>
             <img src="img/Group 1178.png" alt="">
           </div>
           <div class="col module-block">
@@ -592,6 +592,51 @@
               <div class="modul-button Jura-text">
                 <button class="modul-button-in slide-toggle" data-module-type="right" data-number="6" type="button">
                   6
+                </button>
+                <div class="descr">
+                  Dars qoidalari haqida
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 style="text-align:center;">+ bonus <span>modullari</span></h3>
+    <div class="row">
+      <div class="col-6 m-auto">
+        <div class="row">
+          <div class="col modul-image">
+            <div class="modul Archive-text text-white">MODUL <span class="text-white" id="modul-left-number">01</span></div>
+            <div class="duration text-white Jura-text">Davomiyligi: <br><span class="text-white" id="modul-left-durability">01</span> minut</div>
+            <div class="number-modul text-white Jura-text m-auto"><span class="text-white" id="modul-left-desc">SMM bilan tanishish</span></div>
+            <img src="img/Group 1178.png" alt="">
+          </div>
+          <div class="col module-block">
+            <div class="col first-1">
+              <div class="modul-button Jura-text">
+                <button class="modul-button-in slide-toggle" data-module-type="left" data-number="1" type="button">
+                  13
+                </button>
+                <div class="descr">
+                  Dars qoidalari haqida
+                </div>
+              </div>
+            </div>
+            <div class="col first-2">
+              <div class="modul-button Jura-text">
+                <button class="modul-button-in slide-toggle" data-module-type="left" data-number="2" type="button">
+                  14
+                </button>
+                <div class="descr">
+                  Dars qoidalari haqida
+                </div>
+              </div>
+            </div>
+            <div class="col first-3">
+              <div class="modul-button Jura-text">
+                <button class="modul-button-in slide-toggle" data-module-type="left" data-number="3" type="button">
+                  15
                 </button>
                 <div class="descr">
                   Dars qoidalari haqida
@@ -1252,7 +1297,7 @@
 <script type="text/javascript">
   let left_modules = {
     "1": {'duration': '52', 'desc': 'SMM bilan tanishish'},
-    "2": {'duration': '52', 'desc': 'SMM bilan tanishish'},
+    "2": {'duration': '52', 'desc': 'SMM bilan tanishish 4'},
     "3": {'duration': '52', 'desc': 'SMM bilan tanishish'},
     "4": {'duration': '52', 'desc': 'SMM bilan tanishish'},
     "5": {'duration': '52', 'desc': 'SMM bilan tanishish'},
@@ -1278,11 +1323,29 @@
     $('.2nd-slider').hide();
     $('.product-details').hide();
 
+    $('.descr').hide();
+  });
+
+
+
+
+  $( document ).ready(function(){
     $('.kurs-details-1').hide();
     $('.kurs-details-2').hide();
     $('.kurs-details-3').hide();
-    $('.descr').hide();
-  });
+
+	  $( ".slide-toggle-1" ).click(function(){
+	    $( ".kurs-details-1" ).slideToggle();
+	  });
+    $( ".slide-toggle-2" ).click(function(){
+      $( ".kurs-details-2" ).slideToggle();
+    });
+    $( ".slide-toggle-3" ).click(function(){
+      $( ".kurs-details-3" ).slideToggle();
+    });
+	});
+
+
 
   setInterval(function() {
     var start = Date.now();
@@ -1306,6 +1369,7 @@
     });
   });
 
+
   $(".slide-toggle").click(function(){
 	let number = $(this).attr("data-number");
 	let module_type = $(this).attr("data-module-type");
@@ -1319,6 +1383,9 @@
       $('#modul-right-desc').html(right_modules[number]["desc"]);
     }
   });
+
+
+
 
   $('#details-2-slider-b-1').on('click', function() {
     $('#details-2-slider-1').animate({

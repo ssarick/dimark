@@ -614,6 +614,8 @@ h3{
     padding-top: 100px;
     padding-bottom: 50px;
   }
+  .container-6 .module-block{
+  }
   .container-6 h3{
     margin: 50px;
   }
@@ -634,28 +636,53 @@ h3{
   }
   .container-6 .modul-button button.modul-button-in:hover{
     background: linear-gradient(158.52deg, #FFC456 3.01%, #FFAB01 39.7%, #F47960 85.88%);
+
   }
   .descr{
-    padding: 10px 10px 10px 70px;
+    padding: 10px 10px 10px 85px;
     border-radius: 111px;
     margin-top: -78px;
-    margin-left: 15px;
+    margin-left: 10px;
     width: 270px;
     height: 67px;
     border: 4px solid #4D8DFF;
     border-bottom: 0;
     border-top: 0;
     border-left: 0;
+    background: #fff;
     box-shadow:5px 5px 5px 5px rgba(0,0,0,0.1);
     color: #181059;
     position: relative;
     z-index: 1;
   }
-  .container-6 .modul-button button.modul-button-in:hover .descr{
-
+  .container-6 .modul-image img{
+    position: relative;
+    z-index: 1;
+    top: -100px;
   }
-  .container-6 .modul-image{
-    margin-top: 40px;
+  .container-6 .modul-image .modul{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    top: 140px;
+    font-size: 33px;
+  }
+  .container-6 .modul-image .duration{
+    margin: auto;
+    padding-right: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    top: 150px;
+    font-size: 21px;
+  }
+  .container-6 .modul-image .number-modul{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    top: 210px;
+    font-size: 21px;
+    width: 200px;
   }
   .container-6 .row .col-6 .row{
     margin-left: 25px;
@@ -681,7 +708,7 @@ h3{
   .first-3-l{
     margin-left: -90px;
   }
-  .container-6 .col .col .main-buttons .btn . {
+  .container-6 .col .col .main-buttons .btn  {
   }
 
   /* CONTAINER - 7 */
