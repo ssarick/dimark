@@ -150,9 +150,7 @@ h3{
   height: 340px;
 }
 
-
-
-@media (min-width: 320px) and (max-width: 426px){
+@media (min-width: 320px) and (max-width: 415px){
 
   body{
     background: none;
@@ -618,7 +616,7 @@ h3{
     display: none;
   }
   .container-9{
-    background: #fff;
+    background: #FFFFFF;
     margin-bottom: 50px;
   }
   .container-9 .row .gradient-back{
@@ -1322,7 +1320,8 @@ h3{
     border-radius: 111px;
     margin-top: -78px;
     margin-left: 10px;
-    width: 270px;
+    font-size: 16px;
+    width: 420px;
     height: 67px;
     border: 4px solid #4D8DFF;
     border-bottom: 0;
@@ -1339,8 +1338,8 @@ h3{
     padding: 10px 85px 10px 20px;
     border-radius: 111px;
     margin-top: -78px;
-    margin-left: -200px;
-    width: 270px;
+    margin-left: -280px;
+    width: 350px;
     height: 67px;
     border: 4px solid #4D8DFF;
     border-bottom: 0;
@@ -1607,7 +1606,7 @@ h3{
     color: #EFECFD;
   }
   .container-9{
-    background: #EFECFD;
+    background: #FFFFFF;
     margin-bottom: 50px;
     /*background: url(../img/Group 1166.png);*/
     /*background-position: top;*/
