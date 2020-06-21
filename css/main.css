@@ -164,6 +164,9 @@ h3{
     max-width: 103%;
     top: 25%;
   }
+  .komol-main{
+    display: none;
+  }
   .container-1 .row .col-4{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1114,6 +1117,12 @@ h3{
     top: auto;
     left: 527px;
   }
+  .komol-main{
+    position: absolute;
+    width: 30%;
+    top: 285px;
+    left: 920px;
+  }
 
   .container-1 .col-4 {
     display: -webkit-box;
@@ -1366,8 +1375,6 @@ h3{
     font-size: 22px;
     line-height: 25px;
   }
-
-
   .container-4 .rounded-button .rounded-back:hover {
     border-radius: 50%;
     background-color: #FF5931;
@@ -1376,7 +1383,7 @@ h3{
     text-align: center;
     color: white;
   }
-  
+
   .selected{
     border-radius: 50%;
     background-color: #FF5931;
