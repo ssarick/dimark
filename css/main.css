@@ -150,6 +150,11 @@ h3{
   height: 340px;
 }
 
+
+.airpods-block{
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 415px){
 
   body{
